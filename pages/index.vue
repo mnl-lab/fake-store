@@ -5,7 +5,9 @@
                 <ProductCard :product="product" />
             </div>
         </div>
+        <AddProduct @p-added="refresh"></AddProduct>
     </div>
+    
 </template>
 
 <script setup>
@@ -13,13 +15,22 @@ import { ref, onMounted } from "vue";
 import { getProducts } from "@/composables/getProducts.js";
 const products = ref([]);
 
-onMounted(async () => {
+async function fetchProducts() {
     try {
         products.value = await getProducts();
     } catch (error) {
         console.log(error);
     }
+}
+
+function refresh() {
+    fetchProducts();
+}
+
+onMounted(async () => {
+    fetchProducts();
 })
+
 
 
 </script>
