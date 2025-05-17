@@ -26,10 +26,7 @@
 import { ref } from 'vue';
 const emit = defineEmits(["p-added"]);
 
-// const name = ref("");
-// const price = ref(0);
-// const category = ref("");
-// const description = ref("");
+
 
 const formData = ref([]);
 

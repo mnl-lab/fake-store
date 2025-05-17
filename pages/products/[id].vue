@@ -1,5 +1,10 @@
 <template>
-    <ProductDetails :product="product" />
+    <div class="container">
+        <div class="back">
+            <button @click="goBAck">back</button>
+        </div>
+        <ProductDetails :product="product" />
+    </div>
 </template>
 
 <script setup>
