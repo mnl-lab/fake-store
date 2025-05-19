@@ -34,3 +34,10 @@ onMounted(async () => {
 
 
 </script>
+
+<style scoped>
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+</style>
