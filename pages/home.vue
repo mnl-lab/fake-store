@@ -7,7 +7,7 @@
         </div>
         <AddProduct @p-added="refresh"></AddProduct>
     </div>
-    
+
 </template>
 
 <script setup>
@@ -31,17 +31,17 @@ onMounted(async () => {
     fetchProducts();
 })
 
-// console.log("API",process.env.FIREBASE_API_KEY);
 
 
 </script>
 
 <style scoped>
-.products{
+.products {
     display: flex;
     flex-wrap: wrap;
 }
-.container{
+
+.container {
     padding: 1% 8%;
 }
 </style>

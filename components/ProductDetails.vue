@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="name"> {{ product.name }} </div>
-        <div class="price">Price: {{ product.price }}</div>
+        <div class="price">Price: {{ product.price }} $</div>
         <div class="category">Gategory: {{ product.category }}</div>
         <div class="description">
             <fieldset class="product-description">
@@ -41,7 +41,7 @@ const props = defineProps({
 
 .price {
     font-size: 18px;
-    color: #e74c3c;
+    color: #64f54b;
     margin-bottom: 10px;
 }
 

@@ -7,10 +7,10 @@ export default defineNuxtConfig({
   nitro: {
     preset: "static"
   },
-  // runtimeConfig: {
-  //   public: {
-  //     firebaseApiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY,
-  //     // you can add the rest here
-  //   }
-  // }
+  runtimeConfig: {
+    public: {
+      FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
+      
+    }
+  }
 })

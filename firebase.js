@@ -1,9 +1,10 @@
 // ~/firebase/firebase.js
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore  } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
+    apiKey: "AIzaSyBdh_CCQxYi85UZxeByvYN_Xo7fLArJ5hA",
     authDomain: "fake-store-39c5c.firebaseapp.com",
     projectId: "fake-store-39c5c",
     storageBucket: "fake-store-39c5c.firebasestorage.app",
@@ -13,5 +14,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
 
-export { db };
+export { db , auth };
